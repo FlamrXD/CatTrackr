@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,800;1,800&display=swap');
+body {
+  --dot-bg: rgb(215, 215, 215);
+  --dot-color: rgb(0, 0, 0);
+  --dot-size: 1px;
+  --dot-space: 22px;
+  background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+  user-select: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+h2 {
+  font-family: monospace;
+}
+
+.column {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.537);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  /* 2px thick, solid, black border */
+  margin: 10px;
+}
+
+.foodico {
+  width: 100px;
+  height: 100px;
+}
+button{
+  background: none !important;
+  border: none !important;
+}
+
+#idle-time-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.9);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  z-index: 9999;
+  transition: opacity 0.5s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#idle-time-overlay .time {
+  font-size: 10vw;
+}
+
+#idle-time-overlay .date {
+  font-size: 4vw;
+  margin-top: 2rem;
+  opacity: 0.8;
+}

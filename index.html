@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatTrackr</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/hover.css">
+</head>
+
+<body>
+    <h1>CatTrackr</h1>
+    <div id="idle-time-overlay">
+        <div class="time"></div>
+        <div class="date"></div>
+      </div>      
+    <div class="container">
+        <div class="column hvr-grow-rotate" id="brkfst">
+            <h2>Breakfast 5-8 am</h2>
+            <button onclick="brkfstclick()"><img class="foodico" id="brkfstimg" src="img/dry.png"></button>
+            <h2>Dry Food</h2>
+        </div>
+        <div class="column hvr-grow-rotate" id="lunch">
+            <h2>Lunch 2-4 pm</h2>
+            <button onclick="lunchclick()"><img class="foodico" id="lunchimg" src="img/dry.png"></button>
+            <h2>Wet Food</h2>
+        </div>
+        <div class="column hvr-grow-rotate" id="dinner">
+            <h2>Dinner 6-9 pm</h2>
+            <button onclick="dinnerclick()"><img class="foodico" id="dinnerimg" src="img/dry.png"></button>
+            <h2>Dry Food</h2>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="js/playsound.js"></script>
+<script src="js/fed.js"></script>
+<script src="js/idle.js"></script>
+</html>
